@@ -1,0 +1,14 @@
+#!/bin/bash
+
+# Pull the latest updates from the Git repository
+git pull
+
+# Copy .bashrc to the parent directory with confirmation on replacement
+cp -i .bashrc ../
+
+# Ensure the destination directory exists for the i3 config file
+mkdir -p ../.config/i3
+
+# Copy the config file to the specified path with confirmation on replacement
+cp -i config ../.config/i3/config
+
