@@ -10,5 +10,5 @@ cp -i .bashrc ../
 mkdir -p ../.config/i3
 
 # Copy the config file to the specified path with confirmation on replacement
-cp -i config/i3/config ../.config/i3/config
+cp -i .config/i3/config ../.config/i3/config
 
