@@ -119,16 +119,12 @@ fi
 
 
 eval "$(starship init bash)"
-alias vera-docker="cd ~/coding/VeraAPI && sudo docker-compose up --build"
-alias vera-commit="cd ~/coding/VeraAPI && sudo pre-commit"
 
 alias exakty-web="cd ~/coding/exakty-web && pnpm dev"
 alias exadb="cd ~/coding/exakty-web/packages/db && pnpm drizzle-kit studio"
 alias update-all='sudo apt update && sudo apt -y upgrade && sudo apt -y dist-upgrade && sudo apt -y autoremove && sudo apt -y autoclean'
 alias off='update-all && sudo shutdown'
-alias django="python manage.py"
 alias pair-buds="bluetoothctl connect 6C:D3:EE:64:F8:F0"
-alias venv-activate='source venv/bin/activate'
 alias brightness="sudo brightnessctl -d 'intel_backlight' set "
 alias battery="upower -i $(upower -e | grep 'BAT') | grep -E 'state|to\ full|percentage'"
 alias volume="amixer set Master "
